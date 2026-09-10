@@ -12,3 +12,4 @@ This file is used for harmless commit-practice changes.
 - Commit 8: add a quiet progress marker.
 - Commit 9: add another sample change.
 - Commit 10: note a simple practice step.
+- Commit 11: keep the sample file changing.
