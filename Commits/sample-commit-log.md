@@ -8,3 +8,4 @@ This file is used for harmless commit-practice changes.
 - Commit 4: keep the practice streak moving.
 - Commit 5: add a small checkpoint.
 - Commit 6: record another simple update.
+- Commit 7: add one more practice entry.
