@@ -15,3 +15,4 @@ This file is used for harmless commit-practice changes.
 - Commit 11: keep the sample file changing.
 - Commit 12: add a short consistency marker.
 - Commit 13: add the next sample note.
+- Commit 14: finish the sample edit series.
