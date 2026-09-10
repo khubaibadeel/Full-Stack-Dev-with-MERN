@@ -7,3 +7,4 @@ This file is used for harmless commit-practice changes.
 - Commit 3: add another harmless line.
 - Commit 4: keep the practice streak moving.
 - Commit 5: add a small checkpoint.
+- Commit 6: record another simple update.
