@@ -22,9 +22,6 @@ export function displayAvailableProducts() {
 }
 
 
-
-
-
 // Question 1 - Part 2
 // Calculate subtotal, discount and final total.
 export function calculateOrder(cartItems) {
@@ -36,6 +33,14 @@ export function calculateOrder(cartItems) {
     let product = products.find(function (product) {
       return product.id === cartItem.productId;
     });
+
+    if (!product) {
+      throw new Error("Product not found: " + cartItem.productId);
+    }
+
+    if (!Number.isFinite(cartItem.quantity) || cartItem.quantity <= 0) {
+      throw new Error("Quantity must be a positive number.");
+    }
 
     let itemTotal = product.price * cartItem.quantity;
     subtotal = subtotal + itemTotal;
@@ -73,6 +78,10 @@ export function displayInvoice(cartItems, order) {
     let product = products.find(function (product) {
       return product.id === cartItem.productId;
     });
+
+    if (!product) {
+      throw new Error("Product not found: " + cartItem.productId);
+    }
 
     let itemTotal = product.price * cartItem.quantity;
 
