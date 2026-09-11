@@ -56,6 +56,11 @@ export function calculateOrder(cartItems) {
   };
 }
 
+
+
+
+
+
 // Question 1 - Part 3
 // Display a simple invoice in the console.
 export function displayInvoice(cartItems, order) {
