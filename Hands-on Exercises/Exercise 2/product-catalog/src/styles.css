@@ -1,0 +1,50 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f3f5f8; color: #182839;
+  font-family: Arial, sans-serif; }
+button { font: inherit; }
+.catalog { max-width: 1280px; margin: auto; padding: 54px 32px; }
+.catalog-header { display: flex; justify-content: space-between;
+  align-items: center; gap: 28px; margin-bottom: 44px; }
+.eyebrow { color: #236354; font-size: 12px; font-weight: 700;
+  letter-spacing: 1.5px; }
+h1 { font-size: clamp(30px, 4vw, 44px); margin: 12px 0; }
+.intro, .catalog-note { color: #596878; line-height: 1.6; }
+.cart-count { display: flex; align-items: center; gap: 20px;
+  background: #183f37; color: white; padding: 18px 22px;
+  border-radius: 14px; white-space: nowrap; }
+.cart-count strong { background: white; color: #183f37;
+  padding: 7px 12px; border-radius: 8px; font-size: 22px; }
+.section-label { display: flex; justify-content: space-between;
+  align-items: center; margin-bottom: 18px; }
+.section-label h2 { font-size: 22px; margin: 0; }
+.section-label span { color: #596878; font-size: 14px; }
+.product-grid { display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.product-card { background: white; border: 1px solid #dce3e9;
+  border-radius: 16px; padding: 24px; }
+.product-icon { background: #edf3f7; border-radius: 10px;
+  height: 60px; width: 70px; display: grid; place-items: center;
+  color: #36566d; font-size: 22px; font-weight: bold; }
+.category { color: #667786; font-size: 13px; margin: 20px 0 8px; }
+.product-card h2 { font-size: 23px; margin: 0 0 14px; }
+.price { font-size: 24px; font-weight: bold; margin: 0 0 18px; }
+.stock { color: #21644f; font-size: 14px; }
+.sold-out { color: #965036; }
+.product-card button { width: 100%; padding: 13px; margin-top: 8px;
+  background: #24624f; color: white; border: 0; border-radius: 8px;
+  cursor: pointer; font-weight: bold; }
+.product-card button:hover:not(:disabled) { background: #184535; }
+.product-card button:focus-visible { outline: 3px solid #4785d7;
+  outline-offset: 3px; }
+.product-card button:disabled { background: #e6e9ed;
+  color: #657180; cursor: not-allowed; }
+.quantity { font-size: 12px; color: #637487; margin: 12px 0 0; }
+.catalog-note { margin-top: 26px; font-size: 13px; }
+@media (max-width: 900px) {
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .catalog-header { align-items: flex-start; flex-direction: column; }
+}
+@media (max-width: 560px) {
+  .catalog { padding: 28px 18px; }
+  .product-grid { grid-template-columns: 1fr; }
+}
