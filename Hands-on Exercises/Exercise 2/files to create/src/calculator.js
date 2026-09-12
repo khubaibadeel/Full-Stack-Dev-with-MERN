@@ -1,7 +1,7 @@
 import { products } from "./src/products.js";
 
-// Question 1 - Part 1
-// Display only products that are available in stock.
+//  Part 1 of qustion 1
+// Display products that are avalable in stock.
 export function displayAvailableProducts() {
   console.log("AVAILABLE PRODUCTS");
   console.log("------------------");
@@ -20,6 +20,8 @@ export function displayAvailableProducts() {
     }
   }
 }
+
+
 
 // Question 1 - Part 2
 // Calculate subtotal, discount and final total.
