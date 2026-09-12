@@ -6,10 +6,9 @@ function ProductCard({ product, onAddToCart }) {
       <h2>{product.name}</h2>
 
       <p>Category: {product.category}</p>
-
       <p>Price: Rs. {product.price}</p>
-
       <p>Stock: {product.stock}</p>
+      <p>Status: {isOutOfStock ? "Out of Stock" : "In Stock"}</p>
 
       <button
         onClick={onAddToCart}
@@ -21,4 +20,4 @@ function ProductCard({ product, onAddToCart }) {
   );
 }
 
-export default ProductCard; 
+export default ProductCard;

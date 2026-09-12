@@ -8,17 +8,17 @@ export const products = [
   },
   {
     id: 2,
-    name: "Keyboard",
-    category: "Electronics",
-    price: 3500,
-    stock: 10
+    name: "Mouse",
+    category: "Accessories",
+    price: 1500,
+    stock: 0
   },
   {
     id: 3,
-    name: "Mouse",
-    category: "Electronics",
-    price: 1500,
-    stock: 0
+    name: "Keyboard",
+    category: "Accessories",
+    price: 3500,
+    stock: 10
   },
   {
     id: 4,

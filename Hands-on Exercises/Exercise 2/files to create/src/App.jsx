@@ -24,7 +24,7 @@ function App() {
             <ProductCard
               key={product.id}
               product={product}
-              addToCart={addToCart}
+              onAddToCart={addToCart}
             />
           );
         })}

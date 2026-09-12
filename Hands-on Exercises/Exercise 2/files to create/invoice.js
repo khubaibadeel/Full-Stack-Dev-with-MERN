@@ -4,18 +4,19 @@ import {
   displayInvoice
 } from "./calculator.js";
 
-// Products that the customer wants to buy
+// Sample cart items
 const cartItems = [
   { productId: 1, quantity: 1 },
-  { productId: 2, quantity: 2 },
+  { productId: 3, quantity: 2 },
   { productId: 5, quantity: 3 }
 ];
 
-// Show products that are available
+// Run Question 1
+// Part 1: display available products
 displayAvailableProducts();
 
-// Calculate the order
+// Part 2: calculate order totals
 const order = calculateOrder(cartItems);
 
-// Display the invoice
+// Part 3: display invoice
 displayInvoice(cartItems, order);

@@ -1,13 +1,13 @@
 import { products } from "./src/products.js";
 
 // Question 1 - Part 1
-// Show only the products that have stock available.
+// Display only products that are available in stock.
 export function displayAvailableProducts() {
   console.log("AVAILABLE PRODUCTS");
   console.log("------------------");
 
   for (let i = 0; i < products.length; i++) {
-    let product = products[i];
+    const product = products[i];
 
     if (product.stock > 0) {
       console.log(
@@ -21,69 +21,52 @@ export function displayAvailableProducts() {
   }
 }
 
-
 // Question 1 - Part 2
 // Calculate subtotal, discount and final total.
 export function calculateOrder(cartItems) {
   let subtotal = 0;
 
   for (let i = 0; i < cartItems.length; i++) {
-    let cartItem = cartItems[i];
+    const cartItem = cartItems[i];
 
-    let product = products.find(function (product) {
-      return product.id === cartItem.productId;
+    const product = products.find(function (item) {
+      return item.id === cartItem.productId;
     });
 
-    if (!product) {
-      throw new Error("Product not found: " + cartItem.productId);
-    }
-
-    if (!Number.isFinite(cartItem.quantity) || cartItem.quantity <= 0) {
-      throw new Error("Quantity must be a positive number.");
-    }
-
-    let itemTotal = product.price * cartItem.quantity;
+    const itemTotal = product.price * cartItem.quantity;
     subtotal = subtotal + itemTotal;
   }
 
   let discount = 0;
 
   if (subtotal > 50000) {
-    discount = subtotal * 0.1;
+    discount = subtotal * 0.10;
   }
 
-  let finalTotal = subtotal - discount;
+  const finalTotal = subtotal - discount;
 
   return {
     subtotal: subtotal,
     discount: discount,
-    finalTotal: finalTotal,
+    finalTotal: finalTotal
   };
 }
 
-
-
-
-
-
 // Question 1 - Part 3
-// Display a simple invoice in the console.
+// Display a clear invoice in the console.
 export function displayInvoice(cartItems, order) {
-  console.log("\nPRODUCT ORDER INVOICE");
+  console.log("");
+  console.log("PRODUCT ORDER INVOICE");
   console.log("---------------------");
 
   for (let i = 0; i < cartItems.length; i++) {
-    let cartItem = cartItems[i];
+    const cartItem = cartItems[i];
 
-    let product = products.find(function (product) {
-      return product.id === cartItem.productId;
+    const product = products.find(function (item) {
+      return item.id === cartItem.productId;
     });
 
-    if (!product) {
-      throw new Error("Product not found: " + cartItem.productId);
-    }
-
-    let itemTotal = product.price * cartItem.quantity;
+    const itemTotal = product.price * cartItem.quantity;
 
     console.log(
       product.name +
