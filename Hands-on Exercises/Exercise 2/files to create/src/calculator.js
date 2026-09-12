@@ -53,35 +53,3 @@ export function calculateOrder(cartItems) {
 }
 
 
-// Question 1 - Part 3
-// Display a clear invoice in the console.
-export function displayInvoice(cartItems, order) {
-  console.log("");
-  console.log("PRODUCT ORDER INVOICE");
-  console.log("---------------------");
-
-  for (let i = 0; i < cartItems.length; i++) {
-    const cartItem = cartItems[i];
-
-    const product = products.find(function (item) {
-      return item.id === cartItem.productId;
-    });
-
-    const itemTotal = product.price * cartItem.quantity;
-
-    console.log(
-      product.name +
-        " - " +
-        cartItem.quantity +
-        " x Rs. " +
-        product.price +
-        " = Rs. " +
-        itemTotal
-    );
-  }
-
-  console.log("---------------------");
-  console.log("Subtotal: Rs. " + order.subtotal);
-  console.log("Discount: Rs. " + order.discount);
-  console.log("Final Total: Rs. " + order.finalTotal);
-}
