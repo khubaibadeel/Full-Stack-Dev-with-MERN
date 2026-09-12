@@ -3,8 +3,6 @@ import ProductCard from "./ProductCard.jsx";
 import { products } from "./products.js";
 
 function App() {
-  // Question 2 - Part 3
-  // Store the total number of cart items.
   const [cartCount, setCartCount] = useState(0);
 
   function addToCart() {

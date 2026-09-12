@@ -71,6 +71,8 @@ button:disabled {
   cursor: not-allowed;
 }
 
+
+/* Responsive part:-*/
 /* Tablet */
 @media (max-width: 900px) {
   .product-grid {

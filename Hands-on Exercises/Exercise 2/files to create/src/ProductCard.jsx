@@ -8,8 +8,6 @@ function ProductCard({ product, onAddToCart }) {
       <p>Category: {product.category}</p>
       <p>Price: Rs. {product.price}</p>
       <p>Stock: {product.stock}</p>
-      <p>Status: {isOutOfStock ? "Out of Stock" : "In Stock"}</p>
-
       <button
         onClick={onAddToCart}
         disabled={isOutOfStock}
