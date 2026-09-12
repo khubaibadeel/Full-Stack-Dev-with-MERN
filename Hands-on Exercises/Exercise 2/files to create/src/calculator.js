@@ -21,8 +21,6 @@ export function displayAvailableProducts() {
   }
 }
 
-
-
 // Question 1 - Part 2
 // Calculate subtotal, discount and final total.
 export function calculateOrder(cartItems) {
@@ -53,6 +51,7 @@ export function calculateOrder(cartItems) {
     finalTotal: finalTotal
   };
 }
+
 
 // Question 1 - Part 3
 // Display a clear invoice in the console.
