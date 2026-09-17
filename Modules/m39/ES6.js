@@ -14,6 +14,6 @@ Your MERN Stack class starts at 8 PM.
 Please join on time.
 
 Thanks`
-console.log(``)
+console.log(` ${email}`)
 
 // How to restructure the Arrays and Objects
