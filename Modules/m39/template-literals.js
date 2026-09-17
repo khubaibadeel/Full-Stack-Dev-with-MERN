@@ -17,4 +17,3 @@ Please join on time.
 Thanks`
 console.log(`The Message in the email is:${email}`)
 
-// How to restructure the Arrays and Objects
