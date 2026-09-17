@@ -9,7 +9,7 @@ console.log("Hello",name)
 console.log(`Hello ${name}`)
 
 // Practical Example:
-let email=`Dear Ali,
+let email=`Dear Khubaib Adeel,
 Your MERN Stack class starts at 8 PM.
 Please join on time.
 
