@@ -9,11 +9,12 @@ console.log("Hello",name)
 console.log(`Hello ${name}`)
 
 // Practical Example:
-let email=`Dear Khubaib Adeel,
+let email=`
+Dear Khubaib Adeel,
 Your MERN Stack class starts at 8 PM.
 Please join on time.
 
 Thanks`
-console.log(` ${email}`)
+console.log(`The Message in the email is:${email}`)
 
 // How to restructure the Arrays and Objects
