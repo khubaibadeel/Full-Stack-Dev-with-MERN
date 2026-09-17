@@ -8,5 +8,12 @@ console.log("Hello",name)
 // New way:
 console.log(`Hello ${name}`)
 
+// Practical Example:
+let email=`Dear Ali,
+Your MERN Stack class starts at 8 PM.
+Please join on time.
+
+Thanks`
+console.log(``)
 
 // How to restructure the Arrays and Objects
