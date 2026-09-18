@@ -10,3 +10,7 @@ console.log(first, second)   // Output: Apple Banana
 
 let [first_fruit, ,second_fruit] = fruits
 console.log(first_fruit,second_fruit)   // Output: Apple Mango
+
+
+// How to restructure the Objects
+
