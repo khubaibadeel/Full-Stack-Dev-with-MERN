@@ -14,11 +14,21 @@ console.log(first_fruit,second_fruit)   // Output: Apple Mango
 
 // How to restructure the Objects
 
-let user={
+let user1={
     firstname:"Khubaib",
     age: 16,
     city:"Faisalabad"
 }
 
-let [firstname,age,city]= user
+let {firstname,age,city}= user1
+
 console.log(firstname,age,city)
+
+// To skip the second value,
+let user2={
+    firstname:"Khubaib",
+    age: 16,
+    city:"Faisalabad"
+}
+let {firstname: firstname_1, city: city_1} = user2
+console.log(firstname_1,city_1)
