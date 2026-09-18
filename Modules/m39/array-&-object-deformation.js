@@ -32,3 +32,6 @@ let user2={
 }
 let {firstname: firstname_1, city: city_1} = user2
 console.log(firstname_1,city_1)
+
+
+// While working on an application, we usually get data from backend in the form of arrays & object which we need to restructure.
