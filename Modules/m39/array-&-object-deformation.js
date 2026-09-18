@@ -14,3 +14,11 @@ console.log(first_fruit,second_fruit)   // Output: Apple Mango
 
 // How to restructure the Objects
 
+let user={
+    firstname:"Khubaib",
+    age: 16,
+    city:"Faisalabad"
+}
+
+let [firstname,age,city]= user
+console.log(firstname,age,city)
